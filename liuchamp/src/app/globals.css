@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white-palo: #fffbf6;
+  --vino-brown: #2f1a1e;
+  --orange-life: #ff5939;
+}
+
+body {
+  background: var(--white-palo);
+}
