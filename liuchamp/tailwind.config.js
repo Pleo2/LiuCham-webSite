@@ -9,15 +9,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      color: {
-        whatEver: {
+      colors: {
+        custom: {
           whitePalo: '#fffbf6',
           vinoBrow: '#2f1a1e',
           orageLife: '#ff5939',
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)', ..._fontFamily.sans],
+        sans: ['var(--font-graphik)', 'var(--font-inter)', ..._fontFamily.sans],
         display: ['var(--font-blacker)'],
       },
     },
