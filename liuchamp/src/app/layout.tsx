@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
 			className={`${inter.variable} ${bodoniModa.variable} ${graphik.variable} ${blacker.variable} ${blackerRegular.variable}`}
 			lang="en"
 		>
-			<body>{children}</body>
+			<body className='overflow-hidden'>{children}</body>
 		</html>
 	)
 }

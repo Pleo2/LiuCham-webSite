@@ -1,0 +1,16 @@
+{
+	"extends": "./tsconfig.json",
+	"include": [
+		// that you want to lint here
+    "./src/app/**/*",
+    "./src/app/componentscomponents/**/*.{js,ts,jsx,tsx,mdx}",
+		"**/*.tsx",
+		"**/*.ts",
+		"**/*.js",
+		"**/*.jsx",
+		"tests",
+
+		// add all files in which you see
+		".eslintrc.json"
+	]
+}
