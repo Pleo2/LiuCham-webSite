@@ -1,5 +1,4 @@
 import { Inter } from 'next/font/google'
-import { Bodoni_Moda } from 'next/font/google'
 import localFont from 'next/font/local'
 
 export const blacker = localFont({
@@ -21,10 +20,4 @@ export const inter = Inter({
 	subsets: ['latin'],
 	variable: '--font-inter',
 	weight: ['400', '700'],
-})
-
-export const bodoniModa = Bodoni_Moda({
-	weight: ['400', '700'],
-	subsets: ['latin'],
-	variable: '--font-bodoni',
 })

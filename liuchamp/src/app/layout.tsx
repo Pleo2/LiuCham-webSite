@@ -1,5 +1,5 @@
 import './globals.css'
-import { inter, bodoniModa, graphik, blacker, blackerRegular } from '@/fonts'
+import { inter, graphik, blacker, blackerRegular } from '@/fonts'
 
 export const metadata = {
 	title: 'Liuchamp',
@@ -9,10 +9,13 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }): JSX.Element {
 	return (
 		<html
-			className={`${inter.variable} ${bodoniModa.variable} ${graphik.variable} ${blacker.variable} ${blackerRegular.variable}`}
+			className={`${inter.variable} ${graphik.variable} ${blacker.variable} ${blackerRegular.variable}`}
 			lang="en"
 		>
-			<body className='overflow-hidden'>{children}</body>
+			<head>
+				<link rel="shortcut icon" href="/louvre-pyramid.svg" />
+			</head>
+			<body className="overflow-hidden">{children}</body>
 		</html>
 	)
 }

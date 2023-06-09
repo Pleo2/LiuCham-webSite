@@ -8,5 +8,9 @@
   --orange-life: #ff5939;
 }
 *{
-  background-color: var(--white-palo);
+  background-color: tranparent;
+}
+
+body {
+  background-color: var(--white-palo)
 }

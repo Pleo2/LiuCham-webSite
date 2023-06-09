@@ -5,7 +5,7 @@ export default function Header({ title, subTitle }: { title: string; subTitle: s
 	return (
 		<>
 			<section className="w-full flex justify-between px-4 pt-4 items-center">
-				<span className="w-8 h-8 [&>svg]:opacity-80">
+				<span className="w-8 h-8">
 					<LogoIcon size={8} />
 				</span>
 				<span className="w-10 h-10">
@@ -22,7 +22,7 @@ export default function Header({ title, subTitle }: { title: string; subTitle: s
 				</h2>
 			</div>
 
-			<p className="font-sans ml-2 mt-4">Exibitons, tours, videos, artWorks</p>
+			<p className="font-sans ml-2 mt-4">Exhibition, tours, videos, artWorks -small despcription...</p>
 			<Separator />
 		</>
 	)
