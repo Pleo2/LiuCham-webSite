@@ -1,3 +1,4 @@
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
@@ -6,6 +7,11 @@ const nextConfig = {
 				protocol: 'https',
 				hostname: 'artic-web.imgix.net',
 			},
+			{
+				protocol: 'http',
+				hostname: 'aic-mobile-tours.artic.edu',
+				pathname: '/sites/default/files/tour-images/**',
+			}
 		],
 	},
 }

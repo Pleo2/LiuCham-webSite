@@ -1,13 +1,8 @@
-export const initialData = [
-	{
-		id: 1,
-		title: '',
-		imageUrl: '',
-		webUrl: '',
-		description: '',
-		date: {
-			start: '',
-			end: '',
-		},
-	},
-]
+export const initialData = 	[{
+	id: '',
+	title: '',
+	imgUrl: '',
+	webUrl: '',
+	description: '',
+	date: ''
+}]

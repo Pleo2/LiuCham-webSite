@@ -1,5 +1,5 @@
-export interface ObjApi {
-	id: number
+export interface ObjApiExhibition {
+	id: string
 	api_model: string
 	api_link: string
 	title: string
@@ -29,41 +29,18 @@ export interface ObjApi {
 	timestamp: string
 }
 
-export interface ApiResponse {
-	data: {
-		pagination: {
-			total: string
-			limit: number
-			offset: number
-			total_pages: number
-			current_page: number
-			next_url: string
-		}
-		data: ObjApi[]
-		info: {
-			license_text: string
-			license_links: string[]
-			version: string
-		}
-		config: { iiif_url: string; website_url: string }
-	}
-}
-
 // ApiResponse
-export interface DataType {
-	id: number
+export interface DataTypeExhibitions {
+	id: string
 	title: string
-	imageUrl: string
+	imgUrl: string
 	webUrl: string
 	description: string
-	date: {
-		start: string
-		end: string
-	}
+	date: string
 }
 
 export interface GetExhibitions {
-	data: DataType[] | null
+	data: DataTypeExhibitions[] | null
 	loading: boolean
 	error: boolean
 }

@@ -13,9 +13,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
 			lang="en"
 		>
 			<head>
-				<link rel="shortcut icon" href="/louvre-pyramid.svg" />
+				<link rel="shortcut icon" href="
+				/louvre-pyramid.svg" />
 			</head>
-			<body className="overflow-hidden">{children}</body>
+			<body className="overflow-x-hidden">{children}</body>
 		</html>
 	)
 }
