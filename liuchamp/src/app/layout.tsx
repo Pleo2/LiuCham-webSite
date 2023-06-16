@@ -1,5 +1,6 @@
 import './globals.css'
 import { inter, graphik, blacker, blackerRegular } from '@/fonts'
+import { HeaderProvider } from './contexts/HeaderContext'
 
 export const metadata = {
 	title: 'Liuchamp',
@@ -13,10 +14,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
 			lang="en"
 		>
 			<head>
-				<link rel="shortcut icon" href="
-				/louvre-pyramid.svg" />
+				<link
+					rel="shortcut icon"
+					href="
+				/louvre-pyramid.svg"
+				/>
 			</head>
-			<body className="overflow-x-hidden">{children}</body>
+			<body className="overflow-x-hidden">
+				<HeaderProvider>{children}</HeaderProvider>
+			</body>
 		</html>
 	)
 }

@@ -1,3 +1,4 @@
+import { type ObjApiArtWorks } from './getArtWorks.interfaces'
 import { type ObjApiExhibition } from './getExhibition.interfaces'
 import { type ObjApiTours } from './getTours.interfaces'
 
@@ -11,7 +12,7 @@ export interface ApiResponse {
 			current_page: number
 			next_url: string
 		}
-		data: ObjApiExhibition[] | ObjApiTours[]
+		data: ObjApiExhibition[] | ObjApiTours[] | ObjApiArtWorks[]
 		info: {
 			license_text: string
 			license_links: string[]
