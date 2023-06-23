@@ -1,4 +1,6 @@
 'use client'
+import React from 'react'
+import { motion } from 'framer-motion'
 import { SECTIONS } from '@/app/Mooks/sections'
 import useGetExhibitions from '@/app/hooks/useGetExhibition'
 import TitleSection from '../../TitleSection'
@@ -7,10 +9,16 @@ import { type DataTypeExhibitions } from '@/app/Interfaces/getExhibition.interfa
 
 const { exhibitions } = SECTIONS
 
-export default function SectionExhibition(): JSX.Element {
+function SectionExhibition(): JSX.Element {
 	const { data, loading, error } = useGetExhibitions()
 	return (
-		<section className="flex flex-col items-start w-full z-10 bg-transparent px-8">
+		<motion.section
+			className="flex flex-col items-start w-full z-10 bg-transparent px-8 min-h-[920px] sm:min-h-[620px] lg:min-h-[310px] h-max"
+			initial={{ opacity: 0, translateX: '-100%' }}
+			animate={{ opacity: 1, translateX: 0 }}
+			exit={{ opacity: 0, translateX: '100%' }}
+			transition={{ duration: 0.5, delay: 0.3 }}
+		>
 			<TitleSection title={exhibitions.name} id={exhibitions.id} />
 			<article className="w-full flex flex-col justify-center items-center mt-4 gap-12 sm:mt-8 lg:flex-row">
 				{!error && !loading && !(data == null) ? (
@@ -52,6 +60,8 @@ export default function SectionExhibition(): JSX.Element {
 					<h3>Loading...</h3>
 				)}
 			</article>
-		</section>
+		</motion.section>
 	)
 }
+
+export default React.memo(SectionExhibition)
