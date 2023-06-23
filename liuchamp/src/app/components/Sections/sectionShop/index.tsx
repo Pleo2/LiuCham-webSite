@@ -1,13 +1,12 @@
 'use client'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { SECTIONS } from '@/app/Mooks/sections'
-import { useState } from 'react'
 import useGetShop from '@/app/hooks/useGetShop'
 import { type DataTypeShop } from '@/app/Interfaces/getShop.interface'
 import TitleSection from '../../TitleSection'
 import ButtonsSliders from '../../ButtonsSliders'
 import Image from 'next/image'
-import React from 'react'
 
 const { fromTheShop } = SECTIONS
 
